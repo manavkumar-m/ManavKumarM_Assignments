@@ -1,0 +1,31 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+div {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+
+div {
+    text-align: center;
+  }
+
+.heading{
+    background-color: lightblue;
+}
+
+body {
+    background-color: grey;
+  }
+
+h2 {
+      text-align: center;
+    }

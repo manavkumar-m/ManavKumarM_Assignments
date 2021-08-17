@@ -1,0 +1,48 @@
+.heading{
+    background-color: darkgrey;
+}
+.heading1{
+    background-color: darkgrey;
+}
+body {
+    background-color: lightgrey;
+  }
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.text-center {
+    text-align: center;
+  }
+
+.button:hover {
+    background-color: #4CAF50;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer {
+    display: block;
+}
+
+div {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: darkgrey;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+  }
