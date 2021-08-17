@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="A1Q9.css">
-        <title>HTML Assignment</title>
+        <title>Alternate elements</title>
     </head>
     <body>
-        <table border="1">
-            <tr>
-                <td class="topleft">topleft</td>
-                <td class="topright">topright</td>
-            </tr>
-            <tr>
-                <td class="botleft">botleft</td>\
-                <td class="botright">botright</td>
-            </tr>
-        </table>
+        <script>
+            var array1 = ["a","b","c"]; 
+            var array2 = [1,2,3];
+            var newarr = merge(array1,array2);
+            document.writeln("merged array: ",newarr);
+            
+            function merge(a,b){
+                let l = a.length+b.length;
+                let r = [];
+                let j=0,k=0;
+                for(let i=0; i<l;i++) {
+                    if(i%2==0) {
+                    r[i]=a[j++];
+                    } else {
+                    r[i]=b[k++];
+                    }
+                }
+                return r;
+            }
+        </script>
     </body>
 </html>

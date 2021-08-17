@@ -1,44 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTML Assignment</title>
+        <title>Even Odd</title>
     </head>
-
     <body>
-        <th>One Column:</th>
-        <table border=1>
-            <tr>
-                <td>100</td>
-            </tr>
-        </table>
+        <script>
+            var number = parseInt(prompt('Enter a positive integer: '));
+            evenOdd(number);
 
-        <th>One Row and Three Columns:</th>
-        <table border=1>
-            <tr>
-                <td>100</td>
-                <td>200</td>
-                <td>300</td>
-            </tr>
-        </table>
-
-        <th>Two Rows and Three Columns:</th>
-       <table border=1>
-            <tr>
-                <td>100</td>
-                <td>200</td>
-                <td>300</td>
-           </tr>
-
-           <tr>
-                <td>400</td>
-                <td>500</td>
-                <td>600</td>
-           </tr>
-
-       </table>         
-                
-                
-        
+            function evenOdd(number){
+                if(number % 2 == 0)
+                    document.write('parity(',number,'):--> "even"');
+                else
+                    document.write('parity(',number,'):--> "odd"');
+            }   
+        </script>
     </body>
-
 </html>

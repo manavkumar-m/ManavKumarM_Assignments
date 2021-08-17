@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting</title>
+    </head>
+    <body>
+        <script>
+            var array = new Array();
+            for (i = 0; i < 20; i++) {
+                array[i] = Math.floor((Math.random() * 50) + 1);
+            }
+            document.write("Array of random numbers");
+            document.write("<br>Array: ",array.toString());
+            BubbleSort(array);
+            Sort(array, 0, array.length-1);
+
+            function BubbleSort(arr){
+     
+                for(var i = 0; i < arr.length; i++){ 
+                    for(var j = 0; j < ( arr.length - i -1 ); j++){
+                        if(arr[j] > arr[j+1]){
+                        var temp = arr[j]
+                        arr[j] = arr[j + 1]
+                        arr[j+1] = temp
+                        }
+                    }
+                }
+                document.write("<br>sorted of array: ",arr);
+        }
+        function merge( arr,  l,  m,  r){
+                var n1 = m - l + 1;
+                var n2 = r - m;
+        
+                var L = new Array();
+                var R = new Array();
+        
+                for (var i = 0; i < n1; ++i)
+                    L[i] = arr[l + i];
+                for (var j = 0; j < n2; ++j)
+                    R[j] = arr[m + 1 + j];
+        
+                 var i = 0, j = 0;
+        
+                var k = l;
+                while (i < n1 && j < n2) {
+                    if (L[i] <= R[j]) {
+                        arr[k] = L[i];
+                        i++;
+                    }
+                    else {
+                        arr[k] = R[j];
+                        j++;
+                    }
+                    k++;
+                }
+        
+                while (i < n1) {
+                    arr[k] = L[i];
+                    i++;
+                    k++;
+                }
+        
+                while (j < n2) {
+                    arr[k] = R[j];
+                    j++;
+                    k++;
+                }
+                document.write("<br>Merge sorted array: ",arr);
+            }
+ 
+            function Sort(arr, l, r)
+            {
+                document.write("<br> inside Merge sort");
+                if (l < r) {
+                    var m =l+ (r-l)/2;
+                    sort(arr, l, m);
+                    sort(arr, m + 1, r);
+                }
+                 merge(arr, l, m, r);
+            }
+        </script>
+    </body>
+</html>

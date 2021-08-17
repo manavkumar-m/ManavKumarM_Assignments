@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTML Assignment</title>
+        <title>Currency Conversion</title>
     </head>
-
     <body>
-        <form>
-            <input type="checkbox" id="bike">
-            <label for="bike">I have a bike</label>
-            <br> <br>
-            <input type="checkbox" id="car">
-            <label for="car">I have a car</label>
-            <br> <br>
-            <button type="submit">Submit</button>
-        </form>
+        <script>
+            var dollar = parseInt(prompt('Enter dollar amount'));
+            document.writeln(dollar,"$ in other currencies: <br>");
+            var rupee = dollar*74.20;
+            var euro = dollar*0.85;
+            var yen = dollar*109.841;
+            document.writeln(rupee,"Rs is ",dollar,"$ <br>");
+            document.writeln(euro,"Pound is ",dollar,"$.<br>");
+            document.writeln(Math.round(yen),"Yen is ",dollar,"$.<br>");
+        </script>
     </body>
 </html>
