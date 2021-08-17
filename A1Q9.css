@@ -1,0 +1,19 @@
+.topleft{
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.topright{
+    background-color: darkgray;
+    padding: 5px;
+}
+
+.botleft{
+    background-color: darkgray;
+    padding: 20px;
+}
+
+.botright{
+    background-color: lightgray;
+    padding: 20px;
+}
