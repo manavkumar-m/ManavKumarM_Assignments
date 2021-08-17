@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object without class</title>
+    </head>
+    <body>
+        <script>
+            let Name = {
+                first: "Jackie",
+                last: "Chang"
+            };
+            document.write("Name<br>first: "+Name.first);
+            document.write("<br>last: "+Name.last);
+            
+            Name.first = "Manav";
+            Name.last = "Kumar";
+            Name.Country = "India";
+
+            document.write("<br><hr>Update Name properties are:<br>first: "+Name.first);
+            document.write("<br>last: "+Name.last);
+
+            document.write("<br><hr>Update Rectangle properties are (using for loop): ");
+            for (let prop in Name) {
+                document.write("<br>",prop," : ",Name[prop]);
+            }
+        </script>
+    </body>
+</html>
