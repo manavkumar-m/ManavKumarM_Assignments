@@ -1,0 +1,12 @@
+*{
+    background-color: paleturquoise;
+}
+a:link{
+    text-decoration: underline;
+    color: red;
+}
+a:visited{
+    color:red;
+    background-color: transparent;
+    text-decoration: none;
+}

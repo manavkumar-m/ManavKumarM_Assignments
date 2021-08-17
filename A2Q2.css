@@ -1,0 +1,12 @@
+*{
+    background-color: paleturquoise;
+}
+body{
+    border: 1px solid black;
+}
+.test{
+    text-decoration: line-through;
+}
+.test1{
+    text-decoration: underline;
+}

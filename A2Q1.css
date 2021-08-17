@@ -1,0 +1,19 @@
+body{
+    border: 1px solid black;
+    
+}
+
+h1{
+    background-color: rgb(98, 158, 221);
+    margin: 0px;
+}
+
+div{
+    background-color: lightslategray;
+    margin: 0px;
+}
+
+p{
+    background-color: rgb(147, 224, 199);
+    margin: 0px;
+}
