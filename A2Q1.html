@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="A2Q1.css">
-        <title>CSS Assignment</title>
+        <title>Composed Value</title>
     </head>
-    <body>
-        <h1>CSS background-color example!</h1>
-        <div>This is a text inside div element</div>
-        <p>This paragraph has its own background</p>
-        <div>We are still in the duv element</div>
-    </body>
+    <html>
+        <script>
+            var x_1=window.prompt("enter a number");
+            function square_1(x_1){
+                return x_1*x_1;
+            }
+            function double_1(x_1){
+                return x_1*2;
+            }
+            function composedValue(){
+            document.write("The value of compose(square,double) is  "+square_1(double_1(x_1)));
+            document.write("<br>The value of compose(double,square) is  "+double_1(square_1(x_1)));
+            }
+            composedValue();
+        </script>
+    </html>
 </html>
